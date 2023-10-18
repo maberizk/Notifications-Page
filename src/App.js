@@ -11,7 +11,6 @@ import chessPicture from "./images/image-chess.webp";
 function App() {
   return (
     <div className="App">
-      <body>
         <div className="headerContainer">
           <div className="headerLeft">
             <h1>Notifications</h1>
@@ -88,7 +87,6 @@ function App() {
             <p>2 weeks ago</p>
           </div>
         </div>
-      </body>
     </div>
   );
 }
