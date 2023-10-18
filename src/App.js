@@ -12,16 +12,24 @@ function App() {
   return (
     <div className="App">
       <body>
-        <h1>Notifications 3 </h1>
-        <p>Mark all as read</p>
+        <div className="headerContainer">
+          <div className="headerLeft">
+            <h1>Notifications</h1>
+            <span className="numOfNotifications">3</span>
+          </div>
+
+          <p>Mark all as read</p>
+        </div>
         <div class="notifications">
           <div class="notification">
             <img src={markImg} alt="profileImg" />
-            <p>
-              <span className="name">Mark Webber</span> reacted to your recent
-              post <span>My first tournament today!</span>
-            </p>
-            <p>1m ago</p>
+            <div className="noticationText">
+              <p>
+                <span className="name">Mark Webber</span> reacted to your recent
+                post <span>My first tournament today!</span>
+              </p>
+              <p>1m ago</p>
+            </div>
           </div>
           <div class="notification">
             <img src={angelaImg} alt="profileImg" />

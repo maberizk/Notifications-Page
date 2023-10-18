@@ -1,38 +1,63 @@
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+  color: hsl(224, 21%, 14%);
+}
+
+#root {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(210, 60%, 98%);
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1% 3%;
+  margin: 5%;
+  border-radius: 2%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headerContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  height: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.numOfNotifications {
+  font-size: 1.2rem;
+  background: hsl(219, 12%, 42%);
+  color: hsl(0, 0%, 100%);
+  padding: 2% 6%;
+  border-radius: 25%;
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin: 10%;
+}
+
+.notification {
+  display: flex;
+  flex-direction: row;
+}
+
+.noticationText {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
