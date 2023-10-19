@@ -16,8 +16,10 @@ function App() {
             <h1>Notifications</h1>
             <span className="numOfNotifications">3</span>
           </div>
+        <div>
 
-          <p>Mark all as read</p>
+          <p className="markAsRead">Mark all as read</p>
+        </div>
         </div>
         <div class="notifications">
           <div class="notification">
