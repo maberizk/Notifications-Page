@@ -44,17 +44,12 @@
   font-weight: bold;
 }
 
-img {
-  height: 50px;
-  margin: 1.5%;
-}
-
 h1 {
   font-size: 1.5rem;
 }
 
 .notification {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   background-color: hsl(210, 60%, 98%);
   padding: 2%;
@@ -67,8 +62,39 @@ h1 {
 .noticationText {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .markAsRead {
   display: flex;
+}
+
+img {
+  height: 50px;
+  margin: 1%;
+}
+
+.name {
+  font-weight: bold;
+  color: hsl(224, 21%, 14%);
+}
+
+.postTitle {
+  font-weight: bold;
+}
+
+p {
+  color: hsl(219, 12%, 42%);
+  font-size: 1.1rem;
+}
+
+.noticationText {
+  margin-left: 1.5%;
+}
+
+.redCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: hsl(1, 90%, 64%);
 }
