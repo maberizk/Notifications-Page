@@ -126,3 +126,41 @@ p {
   display: flex;
   flex-direction: column;
 }
+
+#chess {
+  margin-right: 0;
+}
+
+@media (max-width: 375px) {
+  .App {
+    width: 90%;
+    margin: 0;
+    padding: 5%;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  .headerContainer {
+    padding: 5% 0;
+  }
+
+  .notification {
+    padding: 4%;
+    border-radius: 6%;
+    margin-top: 3%;
+  }
+  .message {
+    padding: 5%;
+    margin-left: 21%;
+  }
+  .redCircle {
+    width: 8px;
+    height: 8px;
+    margin-left: 3%;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+}

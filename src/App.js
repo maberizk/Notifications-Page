@@ -84,7 +84,7 @@ function App() {
             </p>
             <p>1 week ago</p>
           </div>
-          <img src={chessPicture} alt="chess" />
+          <img id="chess" src={chessPicture} alt="chess" />
         </div>
         <div className="notification">
           <img src={nathanImg} alt="profileImg" />
