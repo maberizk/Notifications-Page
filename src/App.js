@@ -75,7 +75,6 @@ function App() {
             <p>1 day ago</p>
           </div>
         </div>
-        {/* <div className="notification"> */}
         <div className="notificationWMessage">
           <div className="notification">
             <img src={rizkyImg} alt="profileImg" />
@@ -94,7 +93,6 @@ function App() {
               improving my game.
             </p>
           </div>
-          {/* </div> */}
         </div>
         <div className="notification">
           <img src={kimImg} alt="profileImg" />

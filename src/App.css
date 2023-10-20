@@ -92,11 +92,18 @@ img {
   color: hsl(224, 21%, 14%);
   margin-right: 0.5%;
 }
+.name:hover {
+  color: hsl(219, 85%, 26%);
+}
 
 .postTitle {
   font-weight: bold;
   color: hsl(219, 12%, 42%);
   margin-left: 0.5%;
+}
+
+.postTitle:hover {
+  color: hsl(219, 85%, 26%);
 }
 
 p {
@@ -138,6 +145,10 @@ p {
   color: hsl(224, 21%, 14%);
 }
 
+.message:hover {
+  background-color: hsl(211, 68%, 94%);
+}
+
 .notificationWMessage {
   display: flex;
   flex-direction: column;
@@ -150,6 +161,11 @@ p {
 button {
   border: none;
   background-color: hsl(0, 0%, 100%);
+  padding: 1%;
+}
+
+button > p:hover {
+  color: hsl(219, 85%, 26%);
 }
 
 @media (max-width: 375px) {
@@ -172,6 +188,12 @@ button {
     border-radius: 6%;
     margin-top: 3%;
   }
+  .unreadNotification {
+    padding: 4%;
+    border-radius: 6%;
+    margin-top: 3%;
+  }
+
   .message {
     padding: 5%;
     margin-left: 21%;
@@ -183,5 +205,9 @@ button {
   }
   h1 {
     font-size: 1.3rem;
+  }
+
+  button {
+    padding: 2%;
   }
 }
