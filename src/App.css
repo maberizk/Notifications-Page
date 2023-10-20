@@ -51,12 +51,17 @@ h1 {
 .notification {
   display: inline-flex;
   flex-direction: row;
-  background-color: hsl(210, 60%, 98%);
+  /* background-color: hsl(210, 60%, 98%); */
   padding: 2%;
-  margin: 2% 0;
+  margin-top: 1%;
   border-radius: 2%;
   width: 100%;
   box-sizing: border-box;
+  align-items: center;
+}
+
+.unreadNotification {
+  background-color: hsl(210, 60%, 98%);
 }
 
 .noticationText {
@@ -77,14 +82,17 @@ img {
 .name {
   font-weight: bold;
   color: hsl(224, 21%, 14%);
+  margin-right: 0.5%;
 }
 
 .postTitle {
   font-weight: bold;
+  color: hsl(219, 12%, 42%);
+  margin-left: 0.5%;
 }
 
 p {
-  color: hsl(219, 12%, 42%);
+  color: hsl(219, 14%, 63%);
   font-size: 1.1rem;
 }
 
@@ -93,8 +101,28 @@ p {
 }
 
 .redCircle {
+  display: inline-block;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: hsl(1, 90%, 64%);
+  margin-left: 1%;
+}
+
+.blueFont {
+  color: hsl(219, 85%, 26%);
+}
+
+.message {
+  border: 0.5px solid hsl(211, 68%, 94%);
+  border-radius: 2%;
+  padding: 2%;
+  margin-left: 12%;
+  margin-right: 2%;
+  color: hsl(224, 21%, 14%);
+}
+
+.notificationWMessage {
+  display: flex;
+  flex-direction: column;
 }

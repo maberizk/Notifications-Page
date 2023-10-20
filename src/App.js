@@ -21,7 +21,7 @@ function App() {
         </div>
       </div>
       <div class="notifications">
-        <div class="notification">
+        <div class="notification unreadNotification">
           <img src={markImg} alt="profileImg" />
           <div className="noticationText">
             <p>
@@ -32,30 +32,40 @@ function App() {
             <p>1m ago</p>
           </div>
         </div>
-        <div class="notification">
+        <div className="notification unreadNotification">
           <img src={angelaImg} alt="profileImg" />
           <div className="noticationText">
             <p>
-              <span className="name">Angela Gray</span> followed you
+              <span className="name">Angela Gray </span> followed you
+              <div className="redCircle"></div>
             </p>
             <p>5m ago</p>
           </div>
         </div>
-        <div class="notification">
+        <div className="notification unreadNotification">
           <img src={jacobImg} alt="profileImg" />
-          <p>
-            <span className="name">Jacob Thompson</span> has joined your group
-            <span>Chess Club</span>
-          </p>
-          <p>1 day ago</p>
+          <div className="noticationText">
+            <p>
+              <span className="name">Jacob Thompson </span> has joined your
+              group
+              <span className="postTitle blueFont"> Chess Club</span>
+              <div className="redCircle"></div>
+            </p>
+            <p>1 day ago</p>
+          </div>
         </div>
-        <div class="notification">
-          <img src={rizkyImg} alt="profileImg" />
-          <p>
-            <span className="name">Rizky Hasanuddin</span>sent you a private
-            message
-          </p>
-          <p>5 days ago</p>
+        {/* <div className="notification"> */}
+        <div className="notificationWMessage">
+          <div className="notification">
+            <img src={rizkyImg} alt="profileImg" />
+            <div className="noticationText">
+              <p>
+                <span className="name">Rizky Hasanuddin</span>sent you a private
+                message
+              </p>
+              <p>5 days ago</p>
+            </div>
+          </div>
           <div className="message">
             <p>
               Hello, thanks for setting up the Chess Club. I've been a member
@@ -63,31 +73,41 @@ function App() {
               improving my game.
             </p>
           </div>
+          {/* </div> */}
         </div>
-        <div class="notification">
+        <div className="notification">
           <img src={kimImg} alt="profileImg" />
-          <p>
-            <span className="name">Kimberly Smith</span>commented on your
-            picture
-          </p>
-          <p>1 week ago</p>
+          <div className="noticationText">
+            <p>
+              <span className="name">Kimberly Smith</span>commented on your
+              picture
+            </p>
+            <p>1 week ago</p>
+          </div>
           <img src={chessPicture} alt="chess" />
         </div>
-        <div class="notification">
+        <div className="notification">
           <img src={nathanImg} alt="profileImg" />
-          <p>
-            <span className="name">Nathan Peterson</span> reacted to your recent
-            post <span>5 end-game strategies to increase your win rate</span>
-          </p>
-          <p>2 weeks ago</p>
+          <div className="noticationText">
+            <p>
+              <span className="name">Nathan Peterson</span> reacted to your
+              recent post{" "}
+              <span className="postTitle">
+                5 end-game strategies to increase your win rate
+              </span>
+            </p>
+            <p>2 weeks ago</p>
+          </div>
         </div>
-        <div class="notification">
+        <div className="notification">
           <img src={annaImg} alt="profileImg" />
-          <p>
-            <span className="name">Anna Kim</span> left the group{" "}
-            <span>Chess Club</span>
-          </p>
-          <p>2 weeks ago</p>
+          <div className="noticationText">
+            <p>
+              <span className="name">Anna Kim</span> left the group{" "}
+              <span className="postTitle blueFont">Chess Club</span>
+            </p>
+            <p>2 weeks ago</p>
+          </div>
         </div>
       </div>
     </div>
