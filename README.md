@@ -27,6 +27,6 @@ Completed Project Screenshots
 
 <p align="center">
 <img src="/src/images/desktop1.png">
-<img src="/src/images/Mobile1.png">
 <img src="/src/images/desktop_unread.png">
+<img src="/src/images/Mobile1.png">
 </p>
