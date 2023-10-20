@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useState } from "react";
 import markImg from "./images/avatar-mark-webber.webp";
 import angelaImg from "./images/avatar-angela-gray.webp";
 import jacobImg from "./images/avatar-jacob-thompson.webp";
@@ -9,47 +10,67 @@ import annaImg from "./images/avatar-anna-kim.webp";
 import chessPicture from "./images/image-chess.webp";
 
 function App() {
+  const [unread, setUnread] = useState(true);
+  const [number, setNumber] = useState(3);
+  const [dot, setDot] = useState(true);
+
+  const handleMarkAll = () => {
+    setUnread(!unread);
+    if (unread) {
+      setNumber(0);
+    } else {
+      setNumber(3);
+    }
+    setDot(!dot);
+  };
+
   return (
     <div className="App">
       <div className="headerContainer">
         <div className="headerLeft">
           <h1>Notifications</h1>
-          <span className="numOfNotifications">3</span>
+          <span className="numOfNotifications">{number}</span>
         </div>
-        <div>
+        <button onClick={handleMarkAll}>
           <p className="markAsRead">Mark all as read</p>
-        </div>
+        </button>
       </div>
-      <div class="notifications">
-        <div class="notification unreadNotification">
+      <div className="notifications">
+        <div className={unread ? "unreadNotification" : "notification "}>
           <img src={markImg} alt="profileImg" />
           <div className="noticationText">
             <p>
               <span className="name">Mark Webber</span> reacted to your recent
               post <span className="postTitle">My first tournament today!</span>
-              <div className="redCircle"></div>
+              <div
+                className={dot ? "redCircle visible" : "redCircle hidden"}
+              ></div>
             </p>
             <p>1m ago</p>
           </div>
         </div>
-        <div className="notification unreadNotification">
+        <div className={unread ? "unreadNotification" : "notification "}>
           <img src={angelaImg} alt="profileImg" />
           <div className="noticationText">
             <p>
               <span className="name">Angela Gray </span> followed you
-              <div className="redCircle"></div>
+              <div
+                className={dot ? "redCircle visible" : "redCircle hidden"}
+              ></div>
             </p>
             <p>5m ago</p>
           </div>
         </div>
-        <div className="notification unreadNotification">
+        <div className={unread ? "unreadNotification" : "notification "}>
           <img src={jacobImg} alt="profileImg" />
           <div className="noticationText">
             <p>
               <span className="name">Jacob Thompson </span> has joined your
               group
               <span className="postTitle blueFont"> Chess Club</span>
-              <div className="redCircle"></div>
+              <div
+                className={dot ? "redCircle visible" : "redCircle hidden"}
+              ></div>
             </p>
             <p>1 day ago</p>
           </div>
